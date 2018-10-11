@@ -1,6 +1,10 @@
+body {
+    background: #f7f7f7;
+}
 #Search-wrap{
     height: 90px;
     padding-top: 30px;
+    background: #fff;
 }
 #Search{
     height: 60px;
@@ -88,11 +92,545 @@
     width: 18px;
 }
 #Search .search-form {
+    position: relative;
     margin-top: 8px;
+    color: #333;
     height: 36px;
     width: 540px;
     float: left;
     margin-left: 68px;
-    border: 1px solid red;
+    border: 2px solid #ec3639;
+    box-sizing: border-box;
+}
+#Search .search-form .search-text {
+    position: absolute;
+    text-indent: 12px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 0;
+    border: none;
+    display: block;
+    height: 32px;
+    width: 460px;
+}
+#Search .search-form .search-btn {
+    position: absolute;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 75px;
+    height: 32px;
+    background: #ec3639;
+}
+#Search .search-form .search-hotwords {
+    position: absolute;
+    height: 18px;
+    width: 165px;
+    right: 75px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    font-size: 12px;
+}
+#Search .search-form .search-hotwords a{
+    transition: all 0.2s;
+    padding: 1px 2px 1px 2px;
+    margin-left: 10px;
+    color: #757575;
+    display: block;
+    float: left;
+    line-height: 18px;
+    box-sizing: border-box;
+    background: #eee;
+}
+#Search .search-form .search-hotwords a:hover{
+    background: #ec3639;
+    color: #fff;
+}
+#top-nav-wrap {
+    background: #fff;
+    height: 38px;
+}
+#top-nav {
+    height: 38px;
+    width: 1200px;
+    margin: 0 auto;
+}
+#top-nav .top-nav-box .ico {
+    position: absolute;
+    height: 10px;
+    width: 12px;
+    top: 14px;
+    left: 26px;
+    background: url(../images/head.png) no-repeat 0 -154px;
+}
+#top-nav .top-nav-box {
+    position: relative;
+    float: left;
+    height: 38px;
+    width: 108px;
+    color: #fff;
+    background: #ec3639;
+    padding-left: 52px;
+    line-height: 38px;
+    cursor: pointer;
+}
+#top-nav .top-nav-list {
+    padding-left: 24px;
+    float: left;
+}
+#top-nav .top-nav-list li {
+    font-size: 18px;
+    float: left;
+    line-height: 38px;
+    text-align: center;
+    padding-right: 50px;
+}
+#top-nav .top-nav-list li a{
+    color: #333;
+}
+#top-nav .top-nav-list li a:hover{
+    color: #f33;
+}
+#top-nav .top-nav-list li .index{
+    color: #f33;
+}
+
+#banner-slide-wrap {
+    height: 400px;
+    background: url(../images/banner.jpg) no-repeat center;
+}
+#banner-slide-wrap .banner-inside {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    color: #333;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar {
+    height: 400px;
+    background: #454545;
+    width: 160px;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar li {
+    box-sizing: border-box;
+    border-top:  1px solid #4d4d4d;
+    position: relative;
+    height: 55px;
+    width: 140px;
+    margin: 0 auto;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar li h3 {
+    position: relative;
+    height: 54px;
+    width: 98px;
+    float: right;
+    line-height: 54px;
+    font-size: 16px;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar .leftsidebar-icon1 {
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 18px;
+    left: 16px;
+    top: 17px;
+    background: url(../images/head.png) no-repeat 0 0;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar .leftsidebar-icon2 {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 16px;
+    left: 12px;
+    top: 20px;
+    background: url(../images/head.png) no-repeat 0 -21px;
+    
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar .leftsidebar-icon3 {
+    position: absolute;
+    display: block;
+    width: 19px;
+    height: 18px;
+    left: 13px;
+    top: 19px;
+    background: url(../images/head.png) no-repeat 0 -133px;   
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar .leftsidebar-icon4 {
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 18px;
+    left: 12px;
+    top: 17px;
+    background: url(../images/head.png) no-repeat 0 -40px;   
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar .leftsidebar-icon5 {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 27px;
+    left: 15px;
+    top: 11px;
+    background: url(../images/head.png) no-repeat 0 -61px;   
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar .leftsidebar-icon6 {
+    position: absolute;
+    display: block;
+    width: 19px;
+    height: 17px;
+    left: 13px;
+    top: 18px;
+    background: url(../images/head.png) no-repeat 0 -91px;   
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar a {
+    color: #fff;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar em {
+    display: block;
+    position: absolute;
+    top: 23px;
+    right: 12px;
+    width: 6px;
+    height: 11px;
+    background: url(../images/head.png) no-repeat -44px -154px;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar li:hover a:hover {
+    color: #f33;
+    text-decoration: underline;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar li:hover em {
+    display: none;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar li:hover {
+    border-top: none;
+    box-sizing: content-box;
+    padding-right: 20px;
+    background-color: #fff;
+    margin-right: 0;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar li:hover a {
+    color : #333;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar li:hover .leftsidebar-icon1 {
+    background-position: -37px 0;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar li:hover .leftsidebar-icon2{
+    background-position: -30px -21px;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar li:hover .leftsidebar-icon3 {
+    background-position: -31px -133px;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar li:hover .leftsidebar-icon4 {
+    background-position: -30px -40px;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar li:hover .leftsidebar-icon5 {
+    background-position: -35px -61px;
+}
+#banner-slide-wrap .banner-inside .banner-inside-leftsidebar li:hover .leftsidebar-icon6 {
+    background-position: -31px -91px;
+}
+
+#commodity-area1 {
+    position: relative;
+    height: 598px;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 34px 0 0 ;
+}
+#commodity-area1 .tuan-img {
+    position: absolute;
+    height: 587px;
+    width: 181px;
+    top: 11px;
+    left: -19px;
+}
+#commodity-area1 .commodity {
+    height: 564px;
+    box-sizing: border-box;
+    width: 1040px;
+    float: right;
+    border-top: 2px solid #ec3639;
+}
+#commodity-area1 .more-tuan {
+    position: absolute;
+    background: url(../images/moreTuan.png) no-repeat center;
+    text-align: center;
+    height: 31px;
+    line-height: 31px;
+    width: 107px;
+    font-size: 16px;
+    color: #fff;
+    bottom: 83px;
+    left: 27px;
+}
+#commodity-area1 .more-tuan:hover {
+    text-decoration: underline;
+}
+#commodity-area1 .commodity .com-left {
+    float: left;
+    height: 562px;
+    width: 681px;
+    background: #fff;
+}
+.commodity .com-left .list-item li {
+    height: 281px;
+    box-sizing: border-box;
+    width: 227px;
+    border-right: 1px solid rgba(184, 180, 180, 0.342);
+    border-bottom : 1px solid rgba(184,180,180,0.342);
+    float: left;
+}
+.commodity .com-left .list-item li .a-top{
+    display: block;
+    height: 180px;
+    width: 227px;
+}
+.commodity .com-left .list-item li .a-top img{
+    margin: 0 auto;
+    height: 180px;
+    width: 180px;
+    display: block;
+}
+.commodity .com-left .list-item li .p-desc-name {
+    padding-left: 30px;
+    width: 227px;
+
+}
+.commodity .com-left .list-item li .p-desc-name  .a-text{
+    display: block;
+    width: 170px;
+    color: #333;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.commodity .com-left .list-item li .p-desc-name  .a-text:hover {
+    color: #ec3639;
+    text-decoration: underline;
+}
+.commodity .com-left .list-item li .p-desc-price {
+    padding-left: 30px;
+    height: 36px;
+    color: #f33;
+    line-height: 36px;
+    font-size: 18px;
+}
+.commodity .com-left .list-item li .p-desc-price .price-rmb {
+    line-height: 36px;
+    font-size: 16px;
+}
+.commodity .com-left .list-item li .time {
+    padding-left: 30px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #757575;
+}
+.commodity .com-left .list-item li .time em {
+    color: #333;
+}
+.commodity .com-left .list-item li .time em .red-color {
+    color: red;
+}
+.commodity .item-right {
+    float: right;
+    position: relative;
+    height: 561px;
+    width: 359px;
+    background: #fff;
+}
+.commodity .item-right  li {
+    position: relative;
+    height: 187px;
+    width: 359px;
+}
+.commodity .item-right li .com-pic{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin: auto;
+    width: 140px;
+    height: 140px;
+    display: block;
+}
+.commodity .item-right li .com-pic img {
+    display: block;
+    height: 140px;
+    width: 140px;
+}
+.commodity .item-right li .com-pic .icon {
+    color: #fff;
+    text-align: center;
+    padding: 0 1px 0 1px;
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 29px;
+    height: 38px;
+    background: url(../images/actIcon.png) no-repeat center;
+}
+.commodity .item-right  li .com-states {
+    padding-top: 26px;
+    box-sizing: border-box;
+    padding-left: 180px;
+    height: 187px;
+}
+.commodity .item-right  li .com-states  p .states-text{
+    color: #333;
+    font-size: 14px;
+}
+.commodity .item-right  li .com-states  p .states-text:hover {
+    color: #ec3639;
+    text-decoration: underline;
+}
+.commodity .item-right li .p-desc-price {
+    height: 36px;
+    color: #f33;
+    line-height: 36px;
+    font-size: 18px;
+}
+.commodity .item-right li .p-desc-price .price-rmb {
+    line-height: 36px;
+    font-size: 16px;
+}
+.commodity .item-right  li .com-states  p .icon{
+    display: block;
+    width: 140px;
+    font-size: 12px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    color: #ec3639;
+    height: 22px;
+    line-height: 22px;
+    background: #ffe3e3;
+}
+.commodity .item-right  li .com-states .com-onclick {
+    position: absolute;
+    bottom: 35px;
+    color: #fff;
+    cursor: pointer;
+    height: 32px;
+    width: 155px;
+    text-align: center;
+    line-height: 32px;
+    background: url(../images/arrivalBtn.png) no-repeat center;
+}
+
+#Lotteries {
+    overflow: hidden;
+    height: 102px;
+    width: 1200px;
+    margin: 30px auto 0;
+}
+#Lotteries .Lotteries-all {
+    margin-right: 0;
+    box-shadow: none;
+    border: none;
+    background: url(../images/coupon-all-bg.png) no-repeat left top;
+    box-sizing: border-box;
+    height: 102px;
+    width: 168px;
+    padding-top: 11px;
+    padding-left: 20px;
+    color: #fff;
+    float: left;
+}
+#Lotteries .Lotteries-all h4{
+    font-weight: 100;
+    font-size: 24px;
+    height: 33px;
+    width: 137px;
+    line-height: 33px;
+}
+#Lotteries .Lotteries-all p {
+    height: 21px;
+    width: 137px;
+    line-height: 21px;
+    font-size: 14px;
+    color: #fcc;
+}
+#Lotteries .Lotteries-all div {
+    height: 32px;
+    width: 137px;
+}
+#Lotteries .Lotteries-all div a {
+    font-size: 14px;
+    color: #fff;
+    line-height: 32px;
+}
+#Lotteries .Lotteries-all div a:hover{
+    text-decoration: underline;
+}
+#Lotteries li {
+    position: relative;
+    float: left;
+    width: 221px;
+    height: 90px;
+    background: #fff;
+    padding: 10px 10px 0;
+    border: 1px solid #f0f0f0;
+    box-shadow: 1px 0 3px #e8e8e8;
+    margin-right: 15px;
+}
+#Lotteries li .ico {
+    display: block;
+    position: absolute;
+    top:0;
+    width: 18px;
+    right: -18px;
+    height: 101px;
+    background:url(../images/zol-home-icons.png) no-repeat -68px 0;
+}
+#Lotteries li .Lotteries-info {
+    border-bottom: 1px solid #f3f3f3;
+    height: 59px;
+}
+#Lotteries li .Lotteries-info .price {
+    font-style: italic;
+    font-size: 32px;
+    float: left;
+    height: 55px;
+    width: 111px;
+    text-align: left;
+    color: #f66;
+    line-height: 55px;
+    font-weight: 700;
+}
+#Lotteries li .Lotteries-info .name h5{
+    height: 22px;
+    line-height: 22px;
+    padding: 6px 0 0;
+    font-size: 14px;
+    color: #f66;
+    font-weight: 900;
+}
+#Lotteries li .Lotteries-info .name p{
+    color: #999;
+    font-size: 12px;
+}
+#Lotteries li .go-and-get {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+#Lotteries li .go-and-get a{
+    color: #f66;
+}
+#Lotteries li .go-and-get a:hover {
+    text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
