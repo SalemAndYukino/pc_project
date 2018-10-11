@@ -1,3 +1,98 @@
-
-
+#Search-wrap{
+    height: 90px;
+    padding-top: 30px;
+}
+#Search{
+    height: 60px;
+    width: 1200px;
+    margin: 0 auto;
+}
+#Search .logo-index a{
+    display: block;
+    height: 60px;
+    width: 130px;
+    float: left;
+    background: url(../images/logo_130x60.png) no-repeat center;
+    cursor: pointer;
+}
+#Search .city-location {
+    border: 1px solid #e6e6e6;
+    height: 28px;
+    width: 68px;
+    float: left;
+    margin: 10px 0 0 20px;
+}
+#Search .city-location .city-location-span{
+    position: relative;
+    display: block;
+    padding-left: 14px;
+    line-height: 28px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #333;
+}
+#Search .city-location .city-location-span .ico{
+    display: block; height: 4px; width: 7px; position: absolute; background: url(http://icon.zol-img.com.cn/newshop/shop/index/topbar_ico.png) no-repeat 0 -45px; top: 12px; right: 12px; 
+}
+#Search .quick-menu {
+    height: 36px;
+    padding-top: 8px;
+    float: right;
+    font-size: 12px;
+    color: #333;
+}
+#Search .quick-menu a{
+    position: relative;
+    display: block;
+    float: right;
+    margin-left: 30px;
+    text-align: right;
+    font-size: 14px;
+    line-height: 36px;
+}
+#Search .quick-menu .quick-menu-indent{
+    width: 80px;
+    height: 36px;
+    
+}
+#Search .quick-menu .quick-menu-coupon{
+    width: 95px;
+    height: 36px;
+}
+#Search .quick-menu .quick-menu-cart{
+    width: 64px;
+    height: 36px;
+}
+#Search .quick-menu .quick-menu-indent .quick-icon {
+    position: absolute;
+    background: url(../images/head.png) no-repeat 0 -167px;
+    top: 8px;
+    display: block;
+    height: 20px;
+    width: 20px;
+}
+#Search .quick-menu .quick-menu-coupon .quick-icon {
+    position: absolute;
+    background: url(../images/head.png) no-repeat 0px -190px;
+    top:9px;
+    display: block;
+    height: 18px;
+    width: 22px;
+}
+#Search .quick-menu .quick-menu-cart .quick-icon {
+    position: absolute;
+    background: url(../images/head.png) no-repeat 0 -211px;
+    top: 9px;
+    display: block;
+    height: 18px;
+    width: 18px;
+}
+#Search .search-form {
+    margin-top: 8px;
+    height: 36px;
+    width: 540px;
+    float: left;
+    margin-left: 68px;
+    border: 1px solid red;
+}
 /*# sourceMappingURL=style.css.map */
