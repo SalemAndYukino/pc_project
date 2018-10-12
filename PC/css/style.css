@@ -633,4 +633,135 @@ body {
 #Lotteries li .go-and-get a:hover {
     text-decoration: underline;
 }
+
+#Local-purchase {
+    box-sizing: border-box;
+    width: 1200px;
+    height: 36px;
+    margin: 35px auto 15px;
+    padding-left: 40px;
+    background: url(../images/zol-home-icons.png) no-repeat -143px -85px;
+}
+#Local-purchase h3 {
+    height: 36px;
+    line-height: 36px;
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    float: left; 
+}
+#Local-purchase div {
+    box-sizing: border-box;
+    float: left;
+    line-height: 28px;
+    font-size: 14px;
+    padding-top: 8px;
+    color: #999;
+}
+#Local-purchase p {
+    float: right;
+    padding-right: 23px;
+    height: 36px;
+    line-height: 40px;
+    background: url(../images/zol-home-icons.png) no-repeat 100% -277px;
+    font-size: 12px;
+}
+#Local-purchase p a {
+    color : #333;
+}
+#Local-purchase p:hover {
+    background: url(../images/zol-home-icons.png) no-repeat 100% -309px;
+    cursor: pointer;
+}
+#Local-purchase p:hover a{
+    color: #ec3639;
+    text-decoration: underline;
+}
+#Local-pic{
+    height: 200px;
+    width: 1200px;
+    margin: 0 auto;
+}
+#Local-pic a:nth-child(2) {
+    margin: 0 3px 0;
+}
+#Local-pic a{
+    display: block;
+    float: left;
+}
+#Local-items {
+    width: 1200px;
+    height: 359px;
+    box-sizing: border-box;
+    background: #fff;
+    margin: 0 auto;
+    color: #333;
+}
+#Local-items .item {
+    float: left;
+    height: 315px;
+    width: 200px;
+    padding: 20px 20px 24px;
+}
+#Local-items .item .pic {
+    display: block;
+    margin-bottom: 10px;
+}
+#Local-items .item .ware-name {
+    width: 200px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#Local-items .item .ware-name a{
+    color: #333;
+}
+#Local-items .item .ware-name a:hover {
+    color: #ec3639;
+    text-decoration: underline;
+}
+#Local-items .item .ware-msg {
+    height: 22px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #999;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+#Local-items .item .price-info {
+    height: 32px;
+    margin-bottom: 5px;
+    line-height: 32px;
+}
+#Local-items .item .price-info .price {
+    float: left;
+    font-size: 18px;
+    color: #f33;
+    line-height: 32px;
+}
+#Local-items .item .price-info .refer-price {
+    font-size: 12px;
+    float: right;
+    color: #f33;
+    line-height: 32px;
+}
+#Local-items .item .price-info .refer-price span {
+    color: #999;
+}
+#Local-items .item .ware-detail a{
+    display: inline-block;
+    position: relative;
+    height: 22px;
+    padding: 0 6px;
+    line-height: 22px;
+    border: 1px solid #f66;
+    font-size: 12px;
+    color: #f33;
+    border-radius: 3px;
+}
 /*# sourceMappingURL=style.css.map */
