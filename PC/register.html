@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,109 @@
     <link rel="stylesheet" href="css/public.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body style="background:#fff">
     <div id="rl-header-wrap">
         <div id="reg-login-header">
-                <div class="logo"> 
-                        <a title="Z商城" href="http://www.zol.com">
-                            <img width="130" height="60" title="Z商城" alt="Z商城" src="images/logo_130x60.png">
-                            <p>中关村在线旗下网上商城</p>
-                        </a>
-                    </div>
-                    <div class="register-bar">
-                        <a href="/">立即登录</a>
-                        已经有Z商城账号？
-                    </div>
+            <div class="logo">
+                <a title="Z商城" href="index.html">
+                    <img width="130" height="60" title="Z商城" alt="Z商城" src="images/logo_130x60.png">
+                    <p>中关村在线旗下网上商城</p>
+                </a>
+            </div>
+            <div class="register-bar">
+                <a href="login.html">立即登录</a>
+                已经有Z商城账号？
+            </div>
         </div>
     </div>
-    
+
     <div id="register-wrap">
-            <div class="title">30秒快速注册，加入Z商城</div>
+        <div class="title">30秒快速注册，加入Z商城</div>
+        <form action="php/register.php" method="POST">
+            <div class="register-module">
+                <ul class="register-tab">
+                    <li class="current">
+                        <span>用手机号注册</span>
+                    </li>
+                </ul>
+                <div class="register-phone-number" style="display:block;" id="J_register_phone">
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>手机号：</div>
+                        <input name="J_register_phone_number" id="J_register_phone_number" type="text" class="text"
+                            maxlength="11">
+                        <i class="right-tips" style="display: none"></i>
+                        <i class="wrong-tips" style="display:none;" id="J_register_phone_tips">请填写正确的11位正确的手机号码</i>
+                        <div class="tips">请填写手机号码</div>
+                    </div>
+
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>验证码：</div>
+                        <div class="sms-captcha clearfix">
+                            <input name="J_register_phone_code" id="J_register_phone_code" type="text" class="text">
+                            <input name="J_register_phone_type" id="J_register_phone_type" type="hidden" value="0">
+                            <input name="J_register_phone_send" id="J_register_phone_send" type="button" value="获取短信验证码"
+                                class="get-captcha">
+
+                            <span class="loading" style="display:none;" id="J_register_send_wait"><em>100</em>秒后重新获取</span>
+                            <span class="hint" style="display:none;">短信验证码已发送</span>
+                        </div>
+                        <i class="wrong-tips" style="display:none;" id="J_register_phone_code_tips"></i>
+                        <div class="tips">请填写手机号码，然后点击[获取验证码]</div>
+                    </div>
+
+
+
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>密码：</div>
+                        <input name="J_register_pasword_phone" id="J_register_pasword_phone" type="password" class="text">
+                        <i class="wrong-tips" style="display:none;" id="J_register_pasword_phone_tips">密码不可以包含特殊字符</i>
+                        <div class="tips">6-16位字母和数字的组合，不可用特殊字符</div>
+                    </div>
+
+                    <div class="register-form">
+                        <div class="label"><em class="xh">*</em>确认密码：</div>
+                        <input name="J_register_reg_pasword_phone" id="J_register_regPasword_phone" type="password"
+                            class="text">
+                        <i class="wrong-tips" style="display:none;" id="J_register_regPasword_phone_tips"></i>
+                        <div class="tips">再次输入密码</div>
+                    </div>
+                    <label class="agreement">
+                        <input type="checkbox" value="1" name="J_regRead_phone" id="J_regRead_phone" checked="">同意
+                        <a href="javascript:;" target="_blank">《商城用户协议》</a>
+                        <a href="javascript:;" target="_blank" class="xy_a">《隐私权说明》</a>
+                    </label>
+                    <input name="J_register_phone_submit" type="submit" value="注册" class="register-btn" id="J_register_phone_submit">
+                </div>
+            </div>
+        </form>
+        <div class="fast-login">
+            <p>如果您已经注册，请<a href="login.html">直接登录</a>或者用以下方式登录：</p>
+            <div class="fast-login-list">
+                <a target="_blank" href="javascript:;" class="weixin">微信登录</a>
+                <a target="_blank" href="javascript:;" class="sina">新浪微博登录</a>
+                <a target="_blank" href="javascript:;" class="qq">腾讯QQ登录</a>
+                <a target="_blank" href="javascript:;" class="alipay">支付宝账号登录</a>
+                <a target="_blank" href="javascript:;" class="baidu">百度账号登录</a>
+            </div>
+        </div>
     </div>
+    <div id="reg-footer-wrap">
+        <div id="reg-footer">
+            <div class="about">
+                <a href="javascript:;" target="_blank">关于Z商城</a>|
+                <a href="javascript:;" target="_blank">联系我们</a>|
+                <a href="javascript:;" target="_blank">帮助中心</a>
+            </div>
+            <div class="copyright">© 2018. 中关村在线 版权所有</div>
+        </div>
+    </div>
+
     <!-- js部分 -->
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/public.js"></script>
     <script src="js/index.js"></script>
     <script src="js/tools.js"></script>
 </body>
+
 </html>

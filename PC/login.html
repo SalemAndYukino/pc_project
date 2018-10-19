@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录- Z商城</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background:#fafafa">
+        <div id="rl-header-wrap">
+                <div id="reg-login-header">
+                    <div class="logo">
+                        <a title="Z商城" href="index.html">
+                            <img width="130" height="60" title="Z商城" alt="Z商城" src="images/logo_130x60.png">
+                            <p>中关村在线旗下网上商城</p>
+                        </a>
+                    </div>
+                    <div class="register-bar">
+                        <a href="register.html">立即注册</a>
+                        还没有Z商城账号？
+                    </div>
+                </div>
+            </div>
+
+            <div id="login-fun">
+                <form action="php/login.php" method="POST">
+                    <a href="index.html" class="go-index">
+                        <img src="images/login-fun.jpg" alt="" height="350" width="520">
+                    </a>
+                    <div class="login-layer">
+                            <div class="login-layer-head"> 
+                                    <h3>登录Z商城</h3> 
+                                </div>
+                                <div class="log-body">
+                                    <div class="content">
+                                            <div class="form-item-username"> 
+                                                    <input type="text" value="" autocomplete="off" placeholder="手机号/邮箱/用户名" class="text" id="J_loginUser" name="zolShopUserName" maxlength="100"> 
+                                                </div>
+                                                <div class="form-item-password">
+                                                        <input type="password" autocomplete="off" placeholder="密码" class="text" id="J_loginPsw" maxlength="20" name="zolShopUserPsw">
+                                                </div>
+                                    </div>
+                                    <div class="form-other"> 
+                                            <a href="javascript:;" class="mobileLogin-bar" rel="J_phone">手机动态码登录</a> 
+                                            <a target="_blank" href="javascript:;" class="forget-password">忘记密码？</a>
+                                        </div>
+                                        <input type="submit" value="登 录" class="login-layer-btn" id="J_loginBtn">
+                                </div>
+                                <div class="collaborate"> 
+                                        <div class="line"></div> 
+                                        <p>合作账号登录</p> 
+                                        <div class="line"></div> 
+                                    </div>
+                                    <div class="login-foot"> 
+                                            <a target="_blank" class="weixin" href="javascript:;">用微博账号登录</a> 
+                                            <a target="_blank" class="sina" href="javascript:;">用微博账号登录</a> 
+                                            <a target="_blank" class="qq" href="javascript:;">用QQ账号登录</a> 
+                                            <a target="_blank" class="alipay" href="javascript:;">用支付宝账号登录</a> 
+                                            <a target="_blank" class="baidu" href="javascript:;">用百度账号</a> 
+                                        </div>
+                    </div>
+            </form>
+            </div>
+            <div id="reg-footer-wrap">
+                    <div id="reg-footer">
+                        <div class="about">
+                            <a href="javascript:;" target="_blank">关于Z商城</a>|
+                            <a href="javascript:;" target="_blank">联系我们</a>|
+                            <a href="javascript:;" target="_blank">帮助中心</a>
+                        </div>
+                        <div class="copyright">© 2018. 中关村在线 版权所有</div>
+                    </div>
+                </div>
+</body>
+</html>

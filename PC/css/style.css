@@ -54,7 +54,7 @@ body {
     left: -1px;
     top: 25px;
     background-color: #fff;
-    z-index: 4;
+    z-index: 1200;
     border: 1px solid #e6e6e6;
     border-top: none;
 }
@@ -116,6 +116,12 @@ body {
     height: 20px;
     width: 20px;
 }
+#Search .quick-menu .quick-menu-indent:hover {
+    color: #ff3333;
+}
+#Search .quick-menu .quick-menu-indent:hover .quick-icon {
+    background: url(../images/head.png) no-repeat -30px -167px;
+}
 #Search .quick-menu .quick-menu-coupon .quick-icon {
     position: absolute;
     background: url(../images/head.png) no-repeat 0px -190px;
@@ -124,6 +130,12 @@ body {
     height: 18px;
     width: 22px;
 }
+#Search .quick-menu .quick-menu-coupon:hover {
+    color: #ff3333;
+}
+#Search .quick-menu .quick-menu-coupon:hover .quick-icon {
+    background: url(../images/head.png) no-repeat -28px -190px;
+}
 #Search .quick-menu .quick-menu-cart .quick-icon {
     position: absolute;
     background: url(../images/head.png) no-repeat 0 -211px;
@@ -131,6 +143,12 @@ body {
     display: block;
     height: 18px;
     width: 18px;
+}
+#Search .quick-menu .quick-menu-cart:hover {
+    color: #ff3333;
+}
+#Search .quick-menu .quick-menu-cart:hover .quick-icon {
+    background: url(../images/head.png) no-repeat -32px -211px;
 }
 #Search .search-form {
     position: relative;
@@ -245,18 +263,64 @@ body {
 }
 
 #banner-slide-wrap {
+    position: relative;
     height: 400px;
 }
 #banner-slide-wrap .slide-pic {
-    position: relative;
+    position: absolute;
+    height: 400px;
+    width: 100%;
+}
+#banner-slide-wrap .slide-pic li {
+    position: absolute;
+    height: 400px;
+    width: 100%;
 }
 #banner-slide-wrap .slide-pic a {
     display: block;
+    position: absolute;
+    width: 100%;
+    height: 400px;
 }
 #banner-slide-wrap .slide-pic img {
     position: absolute;
 }
+#bx-prev {
+    height: 94px;
+    width: 62px;
+    position: absolute;
+    z-index: 10000;
+    top: 153px;
+    left: -62px;
+}
+#bx-prev:hover {
+    background: rgba(0, 0, 0, .5)
+}
+#bx-prev .arrow {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: url(../images/arrow.png) no-repeat 0 -94px;
+}
+#bx-next {
+    height: 94px;
+    width: 62px;
+    position: absolute;
+    z-index: 10000;
+    top: 153px;
+    right: -62px;
+}
+#bx-next:hover {
+    background: rgba(0, 0, 0, .5)
+}
+#bx-next .arrow {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: url(../images/arrow.png) no-repeat 0 0;
+}
 #banner-slide-wrap .banner-inside {
+    position: relative;
     width: 1200px;
     height: 400px;
     margin: 0 auto;
@@ -1738,7 +1802,7 @@ body {
 
 /* -----------------------------register------------------------------------- */
 #register-wrap {
-    height: 768px;
+    height: 668px;
     width: 980px;
     box-sizing: border-box;
     padding: 0 0 100px;
@@ -1750,5 +1814,417 @@ body {
     background: #fafafa;
     font-size: 18px;
     color: #999;
+}
+#register-wrap form .register-module{
+    float: left;
+    padding: 30px 0 0 89px;
+    width: 500px;
+}
+#register-wrap form .register-module .register-tab {
+    height: 39px;
+    border-bottom: 1px solid #e6e6e6;
+}
+#register-wrap form .register-module .register-tab li {
+    float: left;
+    position: relative;
+    width: 250px;
+    border: 1px solid #e6e6e6;
+    border-bottom: none;
+    text-align: center;
+}
+#register-wrap form .register-module .register-tab  .current {
+    margin: 0 -1px -1px;
+    padding: 0 0 2px;
+    border-top: 2px solid #e02d2d;
+    background: #fff;
+    cursor: default;
+}
+#register-wrap form .register-module .register-tab  .current span {
+    background: url(../images/login-bg.png) no-repeat -158px -235px;
+    color: #c00;
+    line-height: 36px;
+    padding: 0 0 0 20px;
+    display: inline-block;
+    font-size: 18px;
+}
+.register-phone-number{
+    padding: 30px 0 0;
+}
+.register-form {
+    position: relative;
+    margin: 0 0 42px;
+    padding: 0 0 0 83px;
+}
+.register-form .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 83px;
+    height: 41px;
+    line-height: 41px;
+    font-size: 14px;
+    text-align: right;
+    color: #666;
+}
+.register-form .label .xh {
+    padding: 0 7px 0 0;
+    font-size: 12px;
+    color: #f30;
+}
+.register-form .text {
+    display: block;
+    margin: 0 10px 0 0;
+    padding: 8px 5px;
+    width: 278px;
+    height: 22px;
+    border: 1px solid #ccc;
+}
+.register-form .right-tips {
+    position: absolute;
+    top: 12px;
+    left: 383px;
+    width: 15px;
+    height: 15px;
+    background: url(../images/login-bg.png) no-repeat -155px -162px;
+}
+.register-form .wrong-tips {
+    position: absolute;
+    display: block;
+    height: 38px;
+    width: 84px;
+    top: 0;
+    line-height: 38px;
+    font-style: normal;
+    left: 383px;
+    padding: 0 0 0 20px;
+    font-size: 12px;
+    color: #ff3333;
+    background: url(../images//login-bg.png) no-repeat -155px -184px;
+    white-space: nowrap;
+}
+.register-form .tips {
+    position: absolute;
+    top: 47px;
+    left: 83px;
+    color: #aaa;
+    font-size: 12px;
+}
+.register-form .sms-captcha {
+    overflow: hidden;
+}
+.register-form .sms-captcha .text {
+    float: left;
+    width: 158px;
+}
+.get-captcha {
+    float: left;
+    width: 110px;
+    height: 40px;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+    background: #f8f8f8;
+    border: 1px solid #ccc;
+}
+.get-captcha:hover {
+    background: #ccc
+}
+.agreement {
+    display: block;
+    padding: 0 0 0 83px;
+    height: 32px;
+    font-size: 12px;
+    color: #999;
+}
+.agreement  a {
+    color: #134ba0;
+}
+.register-btn {
+    display: block;
+    margin: 20px 0 0 83px;
+    width: 290px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    border: 0 none;
+    background: url(../images/bg.png) no-repeat 0 0;
+    cursor: pointer;
+}
+.register-btn:hover {
+    background: url(../images/bg.png) no-repeat 0 -41px;
+}
+.fast-login {
+    float: right;
+    margin: 30px 0 0;
+    padding: 0 80px 0 25px;
+    width: 170px;
+    border-left: 1px solid #f5f5f5;
+}
+.fast-login p {
+    margin: -6px 0 0;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 28px;
+}
+.fast-login p a {
+    margin: 0 6px;
+    color: #134ba0;
+}
+.fast-login-list a {
+    display: block;
+    margin: 15px 0 0;
+    width: 170px;
+    height: 36px;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+.fast-login-list .weixin {
+    background: url(../images/weixin.png) no-repeat 0 0;
+    background-size: 100%;
+}
+.fast-login-list .weixin:hover {
+    opacity: 0.9;
+}
+.fast-login-list .sina {
+    background: url(../images/login-bg.png) no-repeat;
+}
+.fast-login-list .sina:hover {
+    opacity: 0.9;
+}
+.fast-login-list .qq {
+    background: url(../images/login-bg.png) no-repeat 0 -37px;
+}
+.fast-login-list .qq:hover {
+    opacity: 0.9;
+}
+.fast-login-list .alipay{
+    background: url(../images/login-bg.png) no-repeat 0 -74px;
+}
+.fast-login-list .alipay:hover {
+    opacity: 0.9;
+}
+.fast-login-list .baidu {
+    background: url(../images/login-bg.png) no-repeat 0 -111px;
+}
+.fast-login-list .baidu:hover {
+    opacity: 0.9;
+}
+#reg-footer-wrap {
+    margin: 50px 0 0;
+    padding: 12px 0 25px;
+    border-top: 1px solid #dcdcdc;
+}
+#reg-footer {
+    width: 990px;
+    height: 50px;
+    margin: 0 auto;
+}
+#reg-footer .about {
+    float: left;
+    font-size: 12px;
+    margin: 0 0 0 -10px;
+    color: #ccc;
+}
+#reg-footer .about a{
+    margin: 0 10px;
+    color: #666;
+}
+#reg-footer .about a:hover {
+    color: #ec3639;
+    text-decoration: underline;
+}
+#reg-footer .copyright {
+    float: right;
+    font-size: 12px;
+    color: #666;
+}
+#login-fun form{
+    width: 990px;
+    height: 352px;
+    margin: 0 auto;
+    background: #fff;
+    margin-top: 26px;
+}
+#login-fun form .go-index {
+    display: block;
+    float: left;
+}
+#login-fun form .login-layer {
+    float: right;
+    padding: 0 85px 0 0;
+    width: 290px;
+}
+#login-fun form .login-layer .login-layer-head {
+    position: relative;
+    padding: 20px 0 0;
+    border-bottom: 2px solid #ec3639;
+    text-align: center;
+}
+#login-fun form .login-layer .login-layer-head h3 {
+    height: 35px;
+    font-size: 18px;
+    color: #666;
+}
+.log-body .content {
+    padding: 25px 0 0;
+    position: relative;
+}
+.log-body .content .form-item-username {
+    margin: 0 0 10px;
+    position: relative;
+    padding: 8px 5px;
+    height: 22px;
+    border: 1px solid #ccc;
+}
+.log-body .content .form-item-username .text {
+    display: block;
+    width: 278px;
+    height: 22px;
+    font-size: 14px;
+    border: none;
+}
+.log-body .content .form-item-password {
+    margin: 0 0 10px;
+    position: relative;
+    padding: 8px 5px;
+    height: 22px;
+    border: 1px solid #ccc;
+}
+.log-body .content .form-item-password .text {
+    display: block;
+    width: 278px;
+    height: 22px;
+    font-size: 14px;
+    border: none;
+}
+.form-other {
+    padding: 0 0 10px;
+}
+.form-other .mobileLogin-bar {
+    float: left;
+    padding: 0 0 0 17px;
+    background: url(../images/shop_login_bg.png) no-repeat -280px -113px;
+    color: #333;
+    line-height: 28px;
+    font-size: 12px;
+}
+.form-other .mobileLogin-bar:hover {
+    text-decoration: underline;
+    color: #ce1a1b;
+}
+.form-other .forget-password {
+    color: #134ba0;
+    float: right;;
+    line-height: 28px;
+    font-size: 12px;
+}
+.form-other .forget-password:hover {
+    text-decoration: underline;
+    color: #ce1a1b;
+}
+#J_loginBtn {
+    display: block;
+    margin: 0 0 8px;
+    width: 290px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    background: url(../images/bg.png) no-repeat 0 0;
+    color: #fff;
+    text-align: center;
+    border: 0 none;
+    cursor: pointer;
+}
+.collaborate {
+    height: 18px;
+    width: 290px;
+    text-align: center;
+    margin-top: 15px;
+    color: #666666;
+}
+.collaborate .line {
+    float: left;
+    height: 1px;
+    background: #f0f0f0;
+    width: 100px;
+    margin-top: 7px;
+}
+.collaborate div:nth-of-type(1) {
+    margin-right: 9px;
+}
+.collaborate div:nth-of-type(2) {
+    margin-left: 9px;
+}
+.collaborate p {
+    float: left;
+    font-size: 12px;
+}
+.login-foot {
+    margin: 10px 0 0;
+    height: 38px;
+}
+.login-foot .weixin {
+    float: left;
+    margin: 0 12px 0 25px;
+    width: 38px;
+    height: 38px;
+    text-indent: -9999em;
+    overflow: hidden;
+    background: url(../images/bgs2.png) no-repeat 0 0 ;
+}
+.login-foot .weixin:hover {
+    background: url(../images/bgs2.png) no-repeat 0 -38px;
+}
+.login-foot .sina {
+    float: left;
+    margin: 0 12px 0 0;
+    width: 38px;
+    height: 38px;
+    text-indent: -9999em;
+    overflow: hidden;
+    background: url(../images/bg.png) no-repeat 0 -82px;
+}
+.login-foot .sina:hover {
+    background: url(../images/bg.png) no-repeat 0 -121px;
+}
+.login-foot .qq {
+    float: left;
+    margin: 0 12px 0 0;
+    width: 38px;
+    height: 38px;
+    text-indent: -9999em;
+    overflow: hidden;
+    background: url(../images/bg.png) no-repeat -39px -82px;
+}
+.login-foot .qq:hover {
+    background: url(../images/bg.png) no-repeat -39px -121px;
+}
+.login-foot .alipay {
+    float: left;
+    margin: 0 12px 0 0;
+    width: 38px;
+    height: 38px;
+    text-indent: -9999em;
+    overflow: hidden;
+    background: url(../images/bg.png) no-repeat -78px -82px;
+}
+.login-foot .alipay:hover {
+    background: url(../images/bg.png) no-repeat -78px -121px;
+}
+
+.login-foot .baidu {
+    float: left;
+    margin: 0 12px 0 0;
+    width: 38px;
+    height: 38px;
+    text-indent: -9999em;
+    overflow: hidden;
+    background: url(../images/bg.png) no-repeat -117px -82px;
+}
+.login-foot .baidu:hover {
+    background: url(../images/bg.png) no-repeat -117px -121px;
 }
 /*# sourceMappingURL=style.css.map */
